@@ -197,7 +197,7 @@ The same 65 tonnes are **0.25 % of the mass**, **0.66 % of the carbon** — and 
 
 Severity sets how deep the hole is, not how fast the forest climbs out. Canopy years are projected from eleven observed summers; the methane-sink window is **modelled** — soil methanotrophs are invisible to every satellite band.
 
-Full write-up → **[technical note](docs/paper/Arischia_Technical_Note.md)** ([PDF](docs/paper/Arischia_Technical_Note.pdf)) · exam presentation → **[PDF](docs/presentation/Arischia_Exam_Presentation_Sep2026.pdf)** · every number → **[results register](results/arischia_results_register.csv)**
+Full write-up → **[technical note](docs/paper/Arischia_Technical_Note.md)** ([PDF](docs/paper/Arischia_Technical_Note.pdf)) · presentation → **[PDF](docs/presentation/Arischia_Exam_Presentation_Sep2026.pdf)** · every number → **[results register](results/arischia_results_register.csv)**
 
 ---
 
@@ -267,7 +267,7 @@ OpenCarbon-Forest-FireDebt-EO-Toolkit/
 ├── notebooks/   OpenCarbon_FireDebt_Toolkit.ipynb   ← the toolkit (Colab + Earth Engine)
 ├── docs/        setup · adapt-your-forest · methods · data sources
 │   ├── paper/          technical note (Markdown + PDF)
-│   ├── presentation/   exam presentation, Sapienza, Sep 2026
+│   ├── presentation/   presentation, Sapienza, Sep 2026
 │   └── reference/      sensor sketches, missions & data levels, SNAP operators, SAR polarisation
 ├── results/     Arischia results register and per-block tables (CSV)
 ├── dashboard/   self-contained recovery dashboard (HTML)
