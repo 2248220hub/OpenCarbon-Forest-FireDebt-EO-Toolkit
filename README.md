@@ -27,18 +27,37 @@
 
 ---
 
-## ✦ Why this exists
+## ✦ An open toolkit for fire-emission accounting from space
 
-Forest-fire emission inventories count carbon dioxide because it dominates the mass. But **methane** — a quarter of a percent of what a fire emits — traps about eighty times more heat per kilogram over twenty years, and the same fire destroys the soil bacteria that pull methane back out of the air. Quantifying that *fire debt* normally takes a remote-sensing lab.
+**OpenCarbon · Forest Fire-Debt** is a free, open-source toolkit that turns public satellite data into the full carbon account of a forest fire: what burned, what it emitted, whether a satellite could see the methane, and how long the forest needs to recover. It runs as **one Google Colab notebook on Google Earth Engine** — no installation, no downloads, no paid data. Edit one configuration cell and it analyses another Mediterranean forest fire.
 
-This repository packages the whole analysis as **one Google Colab notebook on Google Earth Engine**: no installation, no downloads, free data only. Change one configuration cell and it runs on another Mediterranean forest fire.
+### What you can do with it
 
-| Built for | What you get |
+| Feature | What it gives you | Domain |
+|---|---|---|
+| **Fuel mapping** | burnable forest by type — CORINE ∩ ESA WorldCover, no tuned parameters | land cover |
+| **Burn severity** | burned area and four severity classes from Sentinel-2 dNBR / RBR | optical |
+| **Fire energy** | fire radiative power and energy from MODIS, and the fire's diurnal duty cycle | thermal |
+| **Emission budget** | biomass, CO₂, CO, CH₄ and PM₂.₅ per fuel class, with 200,000-draw Monte-Carlo uncertainty | carbon accounting |
+| **Methane detectability** | a pre-registered prediction of the plume signal, tested against Sentinel-5P, plus the detection floor for any plume geometry | atmospheric chemistry |
+| **Recovery forecast** | eleven summers of canopy recovery per severity class against an unburnt control, projected forward | prediction |
+| **Methane debt** | how many years of soil methane uptake the fire cancelled out | carbon cycle |
+| **Share-ready outputs** | 7-layer HTML map, recovery dashboard, CSV results register, 300 dpi figures | communication |
+
+Every number is written to one results register the moment it is computed. Anything modelled rather than measured is tagged `[MODELLED]`, so every figure you publish traces back to its source.
+
+### Built for
+
+| Who | What it gives them |
 |---|---|
-| 📰 **Journalists** | defensible numbers for a fire story — hectares burned, tonnes of CO₂ and methane, recovery years — and a shareable HTML map |
-| 🛰️ **EO community & researchers** | a transparent, citable pipeline across optical, thermal and atmospheric sensors, with every number traced to a results register |
-| 🎓 **Beginners & students** | a guided notebook: each block explains the physics, the formula and what to change, with the showcase results saved inside |
-| 🚒 **Civil protection & land managers** | burn severity maps, fuel maps and a recovery timeline per severity class |
+| 🛰️ **Earth-observation community** | a transparent, citable pipeline that combines optical, thermal and atmospheric sensors in one place, ready to extend with new sensors, sites or methods |
+| 🎓 **Students & researchers** | a guided notebook where every block explains the physics, the formula and what to change, with a worked example saved inside to check your own run against |
+| 📰 **Journalists** | defensible numbers for a fire story — hectares burned, tonnes of CO₂ and methane, recovery years — and a map readers can explore |
+| 🏛️ **Governments & conservation organisations** | severity, fuel and recovery maps with a carbon and methane account per fire: evidence for national restoration plans under the **EU Nature Restoration Law**, LULUCF carbon reporting, the **EU Forest Strategy for 2030**, and forest-monitoring work such as the proposed **EU Forest Monitoring Law** |
+
+### The showcase: why methane
+
+The worked example is the 2020 fire at **Arischia** (L'Aquila, Italy). Methane was only **0.25 % of the mass** the fire emitted, yet it carries about **18 % of the fire's 20-year warming**: over that period each kilogram traps roughly eighty times more heat than CO₂. The same fire also shut down the soil bacteria that pull methane back out of the air. The **65 t** it released equals **47–140 years** of that forest's own methane uptake. Measuring that debt is what this toolkit was built for. → [Full showcase](#-showcase--arischia-italy-2020)
 
 ---
 
@@ -196,17 +215,40 @@ Full write-up → **[technical note](docs/paper/Arischia_Technical_Note.md)** ([
 Formulas and constants: **[docs/03_METHODS.md](docs/03_METHODS.md)** · data provenance: **[docs/04_DATA_SOURCES.md](docs/04_DATA_SOURCES.md)**
 
 ---
+## 🌱 Beyond the canopy · microbes and megaherbivores
 
-## 🗺️ Roadmap
+Satellites measure the canopy. The two cycles that decide whether a burned Mediterranean forest becomes a methane sink again run where no satellite band reaches: in the soil, and in the animals that shape the fuel.
+
+### The microbial cycle — the methane sink
+
+- **Who does the work.** Methanotrophic bacteria in the organic horizon of well-drained forest soils oxidise atmospheric methane, 1.5–4.5 kg CH₄ ha⁻¹ yr⁻¹ in temperate forests — the main biological methane sink on land.
+- **What a fire does to them.** It burns the organic horizon they live in. The ash releases ammonium, which competes with methane for the bacteria's key enzyme, methane monooxygenase. Lost soil structure, and compaction from post-fire machinery, then slow methane's diffusion into the soil.
+- **Why recovery lags the canopy.** Leaves can return within two decades; a working organic horizon and its microbial community take longer. The toolkit applies a 1.3–2.0× lag to the canopy timeline and labels the result **modelled**. At Arischia that gives 2043–2094 for the sink, against 2038–2041 for 90 % canopy.
+- **What would close the gap.** Soil flux chambers or eddy-covariance towers along a severity gradient. Management matters too: avoid ammonium-based fertiliser on burned soils, and protect the litter layer during salvage logging.
+
+### The megaherbivore cycle — the fuel and the soil
+
+- **Fuel.** Large herbivores — deer, free-roaming cattle and horses, managed goats and sheep — thin the understorey and break the continuity of fine fuel that carries a surface fire into the crowns. Less continuity means lower severity, and severity drives the combustion completeness β that dominates the emission budget.
+- **Soil.** Dung and trampling speed up nutrient turnover and mix litter into the soil, which feeds microbial recovery. At high densities the same animals compact the soil and reduce gas diffusivity. The outcome depends on stocking density.
+- **In practice.** Targeted grazing is already used for fire prevention in Mediterranean Europe. Catalonia's *Ramats de Foc* programme, for example, pays shepherds to graze strategic firebreaks.
+- **What EO can and cannot see.** Satellites can map the outcome — lower severity and faster canopy recovery in grazed stands — but not the animals or the soil. Pairing grazing records with this toolkit's severity and recovery layers is a testable next study.
+
+> Canopy recovery is **measured**. Methane-sink recovery is **modelled**. The gap between those two timelines is where soil ecology and landscape management settle the forest's methane debt, and where Earth observation needs ground partners.
+
+---
+
+## 🗺️ Future Research Roadmap - Inviting Contributions 🙌
 
 | Next step | Why |
 |---|---|
+| **Hyperspectral image processing** — EnMAP and PRISMA now, Copernicus CHIME next | fuel mapped by species and moisture instead of four CORINE classes · burn severity from spectral unmixing of char, ash and green vegetation · methane plumes retrieved with a matched filter in the 2.3 µm band, at 30 m instead of 5.5 × 7 km |
 | **GEDI lidar** canopy height by severity class | recovery of *structure*, not only spectral colour |
 | **Data fusion** — Sentinel-1 + Sentinel-2 + GEDI | one recovery model across optical, radar and lidar |
 | **ESA SNAP** Sentinel-1 SLC interferometric **coherence** | a structural-change signal independent of radiometric calibration |
 | **Gaussian-process** recovery prediction | recovery years with credible intervals |
 | **VIIRS 375 m** fire radiative power | seven times more fire pixels than MODIS for small fires |
-| Higher-resolution methane — **EnMAP, PRISMA, GHGSat, CO2M** | sensors that could see plumes below TROPOMI's floor |
+| Targeted methane sensors — **GHGSat, CO2M** | point-source and next-generation sensors that could see plumes below TROPOMI's floor |
+| **Soil and grazing ground truth** | flux-chamber and grazing records to turn the modelled methane-sink window into a measured one |
 | **Multi-site** runs on larger Mediterranean fires | map where the methane detection floor is crossed |
 
 Contributions and fire case studies are welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
