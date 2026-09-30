@@ -148,10 +148,11 @@ The worked example is the fire of **30 July – 13 August 2020** above Arischia 
 <p align="center"><img src="assets/results/dashboard_map.jpg" alt="Seven-layer dashboard, Arischia" width="100%"><br>
 <sub>Block 8B dashboard — severity, CH₄ per hectare, biomass and recovery layers over Sentinel-2, with the EMS perimeter in white.
   
-
-| `dashboard.html` | minimal dashboard — headline numbers and the recovery curve only, for a quick look or embedding | download and open in any browser, or view it on the [project page](https://2248220hub.github.io/OpenCarbon-Forest-FireDebt-EO-Toolkit/dashboard/dashboard.html) |
-| `Final_dashboard.html` | full dashboard — recovery trajectory, year-on-year rates and the canopy / methane-sink forecast, all views in one page | download and open in any browser, or view it on the [project page](https://2248220hub.github.io/OpenCarbon-Forest-FireDebt-EO-Toolkit/dashboard/Final_dashboard.html) |
-| `recovery_dashboard.html` | Arischia recovery trajectory and methane-sink forecast on their own — fully self-contained | download and open in any browser, or view it on the [project page](https://2248220hub.github.io/OpenCarbon-Forest-FireDebt-EO-Toolkit/dashboard/recovery_dashboard.html) |
+| File | What it is | Preview |
+|---|---|---|
+| `dashboard.html` | minimal dashboard — headline numbers and the recovery curve only, for a quick look or embedding |[project page](https://2248220hub.github.io/OpenCarbon-Forest-FireDebt-EO-Toolkit/dashboard/dashboard.html) |
+| `Final_dashboard.html` | full dashboard — recovery trajectory, year-on-year rates and the canopy / methane-sink forecast, all views in one page |[project page](https://2248220hub.github.io/OpenCarbon-Forest-FireDebt-EO-Toolkit/dashboard/Final_dashboard.html) |
+| `recovery_dashboard.html` | Arischia recovery trajectory and methane-sink forecast on their own — fully self-contained |[project page](https://2248220hub.github.io/OpenCarbon-Forest-FireDebt-EO-Toolkit/dashboard/recovery_dashboard.html) |
 
 ### Headline numbers
 
