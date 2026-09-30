@@ -1,0 +1,15 @@
+name: opencarbon-firedebt
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - earthengine-api
+  - geopandas
+  - shapely
+  - folium
+  - branca
+  - pandas
+  - numpy
+  - matplotlib
+  - ipywidgets
+  - jupyterlab
