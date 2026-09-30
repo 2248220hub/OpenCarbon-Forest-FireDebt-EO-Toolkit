@@ -1,0 +1,5 @@
+severity,dNBR_range,ha,pct
+Low,0.16-0.27,95.7,31.0
+Moderate,0.27-0.44,79.1,25.6
+High,0.44-0.66,52.3,16.9
+Very high,>=0.66,81.9,26.5

@@ -1,0 +1,57 @@
+block,result,value,unit
+1,Reference perimeter,638.990253,ha
+1,Fuel area (10 m mask),458.0,ha
+1,Mean slope,23.063579,deg
+2,Mean AGB density,117.345599,t/ha
+2,Standing biomass,53694.0,t
+2,July NDMI baseline 2016-2019,0.301567,
+2,July 2020 NDMI anomaly,-0.0092,
+2,Anomaly in baseline sigma,-0.66,sigma
+2,Mean 2m T Jun-Jul,18.070451,degC
+2,Precip Jun-Jul,180.626308,mm
+3,Mean dNBR in burn,0.476188,
+3,High + very high,134.2,ha
+3,Burned forest area,309.0,ha
+4,Detection days,5,
+4,Peak summed FRP,4114.6,MW
+4,FRE (24-h upper bound),279.824849,TJ
+4,Biomass (FRE upper bound),102975.54441,t
+5,Methane debt (years of uptake),47 to 140,yr
+5,CH4 share of forcing,7.300358,%
+5,Equivalent full-power burn,3.491781,h/day
+5,Diurnal duty cycle,0.145491,
+5,FRE / optical ratio,6.873284,x
+5,External CH4 anchor,59.6,t [verification only]
+5,CH4 as CO2-eq (GWP100 27.2),1769.904,t
+5,Burnt biomass (optical),14982.0,t
+5,PM25 emitted,167.45,t
+5,CH4 emitted,65.07,t
+5,CO emitted,1416.45,t
+5,CO2 emitted,24244.07,t
+5,CH4 16-84 band,42.6 to 87.6,t
+5B,CO2 emitted (beta by severity),23487.815812,t
+5B,CO emitted (beta by severity),1373.393434,t
+5B,CH4 emitted (beta by severity),63.12361,t
+5B,PM25 emitted (beta by severity),162.332741,t
+5B,Effective beta,0.408461,
+5B,CH4 shift vs uniform beta,-2.991224,%
+6,Site below detection floor by,25.302499,x
+6,CH4 rate for 2 sigma,164.64336,t/day
+6,Predicted significance,0.079044,sigma
+6,CH4 valid retrieval days,0,
+6,CO valid retrieval days,33,
+6,Predicted dXCH4,0.877384,ppb
+6B,"Detection floor, median",164.64336,t/day
+6B,"Detection floor, 5-95 pct",45 - 626,t/day
+6B,"Max significance, any geometry",0.474261,sigma
+7,Control drift 2016-2026,-1.398941,%
+7,Very high: recovered by 2026,35.764973,%
+7,High: recovered by 2026,51.880667,%
+7,Low: recovered by 2026,66.74424,%
+7,Control interannual sd 2018-2026,0.010819,NBR
+7,Baseline years used,3,years
+7,Moderate: recovered by 2026,59.369681,%
+7D,[MODELLED] High: methane-sink normalisation,2044-2083,yr
+7D,[MODELLED] Low: methane-sink normalisation,2045-2094,yr
+7D,[MODELLED] Moderate: methane-sink normalisation,2043-2085,yr
+7D,[MODELLED] Very high: methane-sink normalisation,2047-2089,yr

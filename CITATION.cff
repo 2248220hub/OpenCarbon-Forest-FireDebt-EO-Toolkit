@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use this toolkit or its results, please cite it as below."
+type: software
+title: "OpenCarbon · Forest Fire-Debt EO Toolkit"
+abstract: >-
+  An open Google Earth Engine + Colab toolkit to quantify the biomass, carbon,
+  methane and other gases released by Mediterranean forest fires from free
+  optical (Sentinel-2), thermal (MODIS) and atmospheric (Sentinel-5P) satellite
+  data, test whether the methane plume was detectable from orbit, and model
+  post-fire canopy and methane-sink recovery. Showcase: the 2020 Arischia fire,
+  L'Aquila, Italy.
+authors:
+  - family-names: Emberumal
+    given-names: Vinoth
+    affiliation: "Sapienza University of Rome"
+version: "1.0.0"
+date-released: "2026-10-01"
+license: MIT
+repository-code: "https://github.com/2248220hub/OpenCarbon-Forest-FireDebt-EO-Toolkit"
+keywords:
+  - earth observation
+  - wildfire
+  - methane
+  - carbon cycle
+  - burn severity
+  - Sentinel-2
+  - Sentinel-5P
+  - MODIS
+  - Google Earth Engine
+  - Mediterranean forest
+references:
+  - type: article
+    authors:
+      - family-names: Laneve
+        given-names: Giovanni
+      - family-names: Pampanoni
+        given-names: Valerio
+    title: "Review of satellite based support to forest fire environmental impact assessment: the example of Arischia (Italy) forest fire"
+    journal: "Geografia, Riscos e Protecção Civil"
+    volume: 2
+    start: 163
+    end: 178
+    year: 2021
+    doi: "10.34037/978-989-9053-06-9_1.2_12"

@@ -1,0 +1,25 @@
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+env/
+
+# Earth Engine credentials — never commit these
+.config/earthengine/
+credentials
+*.json.key
+
+# Large or regenerable outputs
+data/reference/
+*.zip
+*.tif
+*.tiff
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# local helper, not part of the toolkit
+push.bat

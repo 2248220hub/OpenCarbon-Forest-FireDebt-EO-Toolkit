@@ -1,0 +1,5 @@
+class,recovered_2026_pct,mean_rate_pct_yr,k_yr,canopy_90pct_year,canopy_full_year,ch4_sink_modelled_from,ch4_sink_modelled_to
+Low,66.7,3.4,10.9,2039,2057,2045,2094
+Moderate,59.4,5.48,8.9,2038,2053,2043,2085
+High,51.9,7.58,8.3,2038,2052,2044,2083
+Very high,35.8,10.74,8.3,2041,2055,2047,2089
