@@ -38,7 +38,7 @@
 | **Fuel mapping** | burnable forest by type — CORINE ∩ ESA WorldCover, no tuned parameters | land cover |
 | **Burn severity** | burned area and four severity classes from Sentinel-2 dNBR / RBR | optical |
 | **Fire energy** | fire radiative power and energy from MODIS, and the fire's diurnal duty cycle | thermal |
-| **Emission budget** | biomass, CO₂, CO, CH₄ and PM₂.₅ per fuel class, with 200,000-draw Monte-Carlo uncertainty | carbon accounting |
+| **Carbon Cycle Emission budget** | biomass, CO₂, CO, CH₄ and PM₂.₅ per fuel class, with 200,000-draw Monte-Carlo uncertainty | carbon accounting |
 | **Methane detectability** | a pre-registered prediction of the plume signal, tested against Sentinel-5P, plus the detection floor for any plume geometry | atmospheric chemistry |
 | **Recovery forecast** | eleven summers of canopy recovery per severity class against an unburnt control, projected forward | prediction |
 | **Methane debt** | how many years of soil methane uptake the fire cancelled out | carbon cycle |
