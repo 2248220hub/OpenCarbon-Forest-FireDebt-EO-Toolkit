@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <b>An open Earth-observation colab notebook project that turns free satellite data into a forest fire's carbon, methane and biomass budget </b>
+  <b>An open Earth-observation project that turns free satellite data into a forest fire's carbon, methane and biomass budget </b>
 </p>
 
 <p align="center">
