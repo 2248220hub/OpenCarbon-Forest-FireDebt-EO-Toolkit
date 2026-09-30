@@ -11,8 +11,7 @@
 </p>
 
 <p align="center">
-  <b>An open Earth-observation toolkit that turns free satellite data into a forest fire's carbon, methane and biomass budget —<br>
-  and a forecast of how long the forest needs to pay it back.</b>
+  <b>An open Earth-observation colab notebook project that turns free satellite data into a forest fire's carbon, methane and biomass budget </b>
 </p>
 
 <p align="center">
