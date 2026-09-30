@@ -29,7 +29,7 @@
 
 ## ✦ An open toolkit for fire-emission accounting from space
 
-**OpenCarbon · Forest Fire-Debt** is a free, open-source toolkit that turns public satellite data into the full carbon account of a forest fire: what burned, what it emitted, whether a satellite could see the methane, and how long the forest needs to recover. It runs as **one Google Colab notebook on Google Earth Engine** — no installation, no downloads, no paid data. Edit one configuration cell and it analyses another Mediterranean forest fire.
+**OpenCarbon · Forest Fire-Debt V1** is a free, open-source toolkit that turns public satellite data into the full carbon account of a forest fire: what burned, what it emitted, whether a satellite could see the methane, and how long the forest needs to recover. It runs as **one Google Colab notebook on Google Earth Engine** — no installation, no downloads, no paid data. Edit one configuration cell and it analyses another Mediterranean forest fire.
 
 ### What you can do with it
 
